@@ -8,6 +8,27 @@ While the model provides realistic matchups—such as **Real Madrid vs Mancheste
 
 The final bracket simulation crowned **Liverpool as Champions**, a plausible outcome given their current form. However, external factors like injuries, tactical changes, and in-game dynamics remain unpredictable.
 
+## Project Structure
+
+The project is organized into multiple Jupyter notebooks and datasets, ensuring a clear workflow from data collection to final predictions.
+
+### Notebooks
+
+- **`DataScraperFootball.ipynb`** – Scrapes match and team statistics from FBref, collecting raw data on Champions League performances.
+- **`DataCleaningFootball.ipynb`** – Cleans and processes the scraped data, standardizing formats, assigning team IDs, and handling missing values.
+- **`TeamAnalysis.ipynb`** – Analyzes key features for each team, identifying important statistical trends.
+- **`Result_Prediction.ipynb`** – Trains the machine learning model and simulates the knockout stage bracket to predict the Champions League winner.
+
+### Datasets
+
+- **`champions_league_stats.csv`** – Raw scraped data, containing team match statistics from the league phase.
+- **`ucl_match_data.csv`** – Cleaned and structured data, with irrelevant columns removed and opponent id mappings applied.
+- **`processed_dataset.csv`** – Fully processed dataset with engineered features, ready for model training.
+
+### Results
+
+- **`Results/`** – Contains visualizations, model outputs, and the final predicted knockout bracket.
+
 ## 1. Data Scraping
 
 The data for the UCL 2025 match predictions was scraped from [FBref - Champions League Stats](https://fbref.com/en/comps/8/Champions-League-Stats), focusing on match statistics and shooting data for teams in the League Phase of the 2024-2025 Champions League. The process was implemented using Python's BeautifulSoup library to parse the HTML content, and requests for sending HTTP requests to the webpages.
