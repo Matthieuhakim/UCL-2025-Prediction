@@ -1,4 +1,4 @@
-# UCL-2025-Prediction
+# UCL-2025-Knockout-Match-Prediction
 
 This project aims to predict the outcome of the 2025 UEFA Champions League knockout stage using match data from the current season. By collecting and analyzing team performance metrics from the league phase, we built a machine-learning model to evaluate each team’s strength. The dataset includes statistics such as goals, expected goals (xG), points average, and shooting accuracy, ensuring that only up-to-date performance data is used.
 
